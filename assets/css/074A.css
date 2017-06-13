@@ -2696,7 +2696,7 @@ h2.title {
   transition: background-color .1s .2s;
 }
 
-.popover, .tooltip-inner {
+.popover, .toltip-inner {
   color: #555555;
   line-height: 1.5em;
   background: #FFFFFF;
@@ -2725,7 +2725,7 @@ h2.title {
   line-height: 1.4;
 }
 
-.tooltip.in {
+.toltip.in {
   opacity: 1;
   -webkit-transform: translate3d(0, 0px, 0);
   -moz-transform: translate3d(0, 0px, 0);
@@ -2734,7 +2734,7 @@ h2.title {
   transform: translate3d(0, 0px, 0);
 }
 
-.tooltip {
+.toltip {
   opacity: 0;
   transition: opacity, transform .2s ease;
   -webkit-transform: translate3d(0, 5px, 0);
@@ -2743,20 +2743,20 @@ h2.title {
   -ms-transform: translate3d(0, 5px, 0);
   transform: translate3d(0, 5px, 0);
 }
-.tooltip.left .tooltip-arrow {
+.toltip.left .toltip-arrow {
   border-left-color: #FFFFFF;
 }
-.tooltip.right .tooltip-arrow {
+.toltip.right .toltip-arrow {
   border-right-color: #FFFFFF;
 }
-.tooltip.top .tooltip-arrow {
+.toltip.top .toltip-arrow {
   border-top-color: #FFFFFF;
 }
-.tooltip.bottom .tooltip-arrow {
+.toltip.bottom .toltip-arrow {
   border-bottom-color: #FFFFFF;
 }
 
-.tooltip-inner {
+.toltip-inner {
   padding: 10px 15px;
   min-width: 130px;
 }
@@ -3947,6 +3947,27 @@ progres {
 .paginations-sm > li:last-child > span {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
+}
+
+.tooltip{
+  position:relative;
+  float:right;
+}
+.tooltip > .tooltip-inner {background-color: #eebf3f; padding:5px 15px; color:rgb(23,44,66); font-weight:bold; font-size:13px;}
+.popOver + .tooltip > .tooltip-arrow {	border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #eebf3f;}
+
+section{
+  margin:100px auto;
+  height:1000px;
+}
+.pg{
+  border-radius:0;
+  overflow:visible;
+}
+.pg-bar{
+   background:rgb(23,44,60);
+  -webkit-transition: width 1.5s ease-in-out;
+  transition: width 1.5s ease-in-out;
 }
 
 
