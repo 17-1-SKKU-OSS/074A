@@ -87,7 +87,7 @@
 			<div class="section section-basic">
 				<div class="container">
 					<div class="title">
-						<h2>Let's get it started!</h2>
+
 					</div>
 					<div class="title">
 						<h3>Goals<br />
@@ -114,7 +114,7 @@
 							<p>step1</p>
 
 							<div class="progress progress-line-info">
-								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="60" aria-valuemax="100" style="width: 90%;">
+								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="60" aria-valuemax="100" style="width: 100%;">
 									<span class="sr-only">60% Complete</span>
 								</div>
 							</div>
@@ -138,13 +138,13 @@
 							</div>
 							<p>step5</p>
 							<div class="progress progress-line-info">
-								<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
 									<span class="sr-only">60% Complete</span>
 								</div>
 							</div>
 							<p>step6</p>
 							<div class="progress progress-line-info">
-								<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
 									<span class="sr-only">60% Complete</span>
 								</div>
 							</div>
@@ -192,14 +192,14 @@
 
 												</li>
 												<li class="margin-right-me">
-													<a href="#settings" data-toggle="tab">
+													<a href="#step4" data-toggle="tab">
 													<i class="fa fa-space-shuttle"></i>
 													Step4
 												</a>
 
 												</li>
 												<li class="margin-right-me">
-													<a href="#settings" data-toggle="tab">
+													<a href="#step5" data-toggle="tab">
 													<i class="fa fa-space-shuttle"></i>
 													Step5
 												</a>
@@ -207,7 +207,7 @@
 												</li>
 
 												<li class="margin-right-me">
-													<a href="#settings" data-toggle="tab">
+													<a href="#step6" data-toggle="tab">
 												<i class="fa fa-space-shuttle"></i>
 												Step6
 											</a>
@@ -215,14 +215,14 @@
 												</li>
 
 												<li class="margin-right-me">
-													<a href="#settings" data-toggle="tab">
+													<a href="#step7" data-toggle="tab">
 												<i class="fa fa-space-shuttle"></i>
 												Step7
 											</a>
 
 												</li>
 												<li class="margin-last">
-													<a href="#settings" data-toggle="tab">
+													<a href="#step8" data-toggle="tab">
 												<i class="fa fa-space-shuttle"></i>
 												Step8
 											</a>
@@ -340,12 +340,7 @@
 												</div>
 											</div>
 
-											<small>Animated</small>
-											<div class="bs-component">
-												<div class="progres progres-striped active">
-													<div class="progres-bar" style="width: 45%"></div>
-												</div>
-											</div>
+
 
 											<small>Stacked</small>
 											<div class="bs-component">
@@ -435,27 +430,117 @@
 													<li><a href="#profile" data-toggle="tab">&lt prev</a></li>
 													<li><a href="#profile" data-toggle="tab">1</a></li>
 													<li class="active"><a href="#messages" data-toggle="tab">2</a></li>
-													<li><a href="javascript:void(0);">3</a></li>
+													<li><a href="#settings" data-toggle="tab">3</a></li>
 													<li><a href="javascript:void(0);">4</a></li>
 													<li><a href="javascript:void(0);">5</a></li>
 													<li><a href="javascript:void(0);">6</a></li>
 													<li><a href="javascript:void(0);">7</a></li>
 													<li><a href="javascript:void(0);">8</a></li>
-													<li><a href="javascript:void(0);">next &gt</a></li>
+													<li><a href="#settings">next &gt</a></li>
 												</ul>
 											</div>
 
 										</div>
 										<div class="tab-pane" id="settings">
-											<p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities.
-												I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+											<h3 style="text-align: justify;">
+												<div class="title">
+													<small> 2. Improvement of progress bars by me<br />&nbsp&nbsp1) Bootswatch</small>
+												</div>
+												<div class="container-fluid">
+													<small>Before(Basic)</small>
+																		<div class="bs-component">
+																			<div class="progres">
+																				<div class="progres-bar" style="width: 60%;"></div>
+																			</div>
+																		</div>
+
+
+												<small>After(Animated)</small>
+												<div class="bs-component">
+													<div class="progres progres-striped active">
+														<div class="progres-bar" style="width: 45%"></div>
+													</div>
+												</div>
+												<br />
+
+
+											</div>
+											<small>&nbsp&nbsp2) Material-kit</small>
+											<div class="container-fluid">
+												<small>Before(Basic)</small><br />
+			                    <div class="progress progress-line-primary">
+			                    	<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+			                        <span class="sr-only">60% Complete</span>
+			                      </div>
+			                    </div>
+													<small>After(Slider)</small><br />
+													<div id="sliderRegular" class="slider"></div>
+													<small>After(Hover-text)</small><br />
+													<div class="progress progress-line-primary" title="30%">
+			                    	<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;" title="30%">
+			                        <span class="sr-only">60% Complete</span>
+			                      </div>
+			                    </div>
+
+
+
+											</div>
+											</h3>
+											<div class="container-fluid">
+												<ul class="pagination pagination-info">
+													<li><a href="#messages" data-toggle="tab">&lt prev</a></li>
+													<li><a href="#profile" data-toggle="tab">1</a></li>
+													<li><a href="#messages" data-toggle="tab">2</a></li>
+													<li  class="active"><a href="#settings" data-toggle="tab">3</a></li>
+													<li><a href="javascript:void(0);">4</a></li>
+													<li><a href="javascript:void(0);">5</a></li>
+													<li><a href="javascript:void(0);">6</a></li>
+													<li><a href="javascript:void(0);">7</a></li>
+													<li><a href="javascript:void(0);">8</a></li>
+													<li><a href="#settings">next &gt</a></li>
+												</ul>
+											</div>
+
+
 										</div>
+										<div class="tab-pane" id="step4">
+											<h3 style="text-align: justify;">
+												<div class="title">
+													<small> 1. Decision from reply of issue</small>
+
+												</div>
+												<img class="img-responsive center-block" src="assets/img/issue3.png"><br />
+												<small>&nbsp&nbsp1) issue에 대한 답변은 hover text 기능을 추가해도 좋다는 것이었다.<br />&nbsp&nbsp2) 하지만 다른 theme들과의 통일성을 유지하기 위해 angular.js는 사용불가하다는 답변.<br />&nbsp&nbsp3) thomas가 제시해준대로 bootstrap의 tooltip 사용하기로 결정<br /><br /><br /></small>
+											</h3>
+											<div class="container-fluid">
+												<ul class="pagination pagination-info">
+													<li><a href="#messages" data-toggle="tab">&lt prev</a></li>
+													<li><a href="#profile" data-toggle="tab">1</a></li>
+													<li><a href="#messages" data-toggle="tab">2</a></li>
+													<li><a href="#settings" data-toggle="tab">3</a></li>
+													<li class="active"><a href="javascript:void(0);">4</a></li>
+													<li><a href="javascript:void(0);">5</a></li>
+													<li><a href="javascript:void(0);">6</a></li>
+													<li><a href="javascript:void(0);">7</a></li>
+													<li><a href="javascript:void(0);">8</a></li>
+													<li><a href="#settings">next &gt</a></li>
+												</ul>
+											</div>
+
+										</div>
+										<div class="tab-pane" id="step5">
+											<h3 style="text-align: justify;">
+												<div class="title">
+													<small> 1. Decision from reply of issue</small>
+
+												</div>
+											</h3>
+											</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
 
 
 
@@ -541,5 +626,21 @@
 
 	});
 </script>
+
+<script type="text/javascript">
+	$(function() {
+		$('[data-toggle="tooltip"]').tooltip({
+			trigger: 'manual'
+		}).tooltip('show');
+	});
+
+	// $( window ).scroll(function() {
+	// if($( window ).scrollTop() > 10){  // scroll down abit and get the action
+	$(".pg-bar").each(function() {
+		each_bar_width = $(this).attr('aria-valuenow');
+		$(this).width(each_bar_width + '%');
+	});
+</script>
+
 
 </html>
