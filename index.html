@@ -99,12 +99,13 @@
 
 						<h3>Steps<br />
 								<small>1. Sending issue to bootswatch, make sure whether angular.js can be used in bootswatch and then find clear direction of commit.</small><br />
-								<small>2. After deciding direction of commit, make use of themes of bootswatch.</small><br />
+								<small>2. After deciding direction of commit, make use of themes of bootswatch and analyze them.</small><br />
 								<small>3. In 2 step, if there is any possible improvement or error, then commit.</small><br />
 								<small>4. Combining bootswatch with pre-designed pages, decide to use angular.js. </small><br />
 								<small>5. In 4 step, if it's possible, try to make reduce amount of codes.</small><br />
 								<small>6. Add new features and functions to origin of template</small><br />
 								<small>7. Wrapping up the static page.</small><br />
+								<small>8. Review.</small><br />
 
 							</h3><br /><br /><br />
 
@@ -242,14 +243,10 @@
 											단해 material-kit에 관련 이슈를 보냈다.<br />&nbsp&nbsp2) 해당 이슈에 대한 답변을 기다리는 중<br /><br /><br /></small>
 										</h3>
 											<div class="container-fluid">
-
-
-
-
 												<ul class="pagination pagination-info">
 													<li><a href="javascript:void(0);">&lt prev</a></li>
-													<li class="active"><a href="javascript:void(0);">1</a></li>
-													<li><a href="javascript:void(0);">2</a></li>
+													<li class="active"><a href="#profile" data-toggle="tab">1</a></li>
+													<li><a href="#messages" data-toggle="tab">2</a></li>
 													<li><a href="javascript:void(0);">3</a></li>
 													<li><a href="javascript:void(0);">4</a></li>
 													<li><a href="javascript:void(0);">5</a></li>
@@ -261,10 +258,194 @@
 											</div>
 										</div>
 										<div class="tab-pane" id="messages">
-											<h3 style="text-align: justify;"><small> 1. Sending an issue to bootswatch</small><br /><br /><img class="img-responsive center-block" src="assets/img/issue2.png"><br /> <small> &nbsp&nbsp1) 페이지 제작 도중 progress bar에 mouse hover text 기능이 들어가면 좋을 것 같다고 판
-											단해 bootswatch에 관련 이슈를 보냈다. <br />&nbsp&nbsp2) bootswatch theme들의 기능 개선이나 기능 추가를 위해 jqury 혹은 angular.js를 사용해도 되는지 여부를 묻기 위해 관련 이슈를 보냈다.</small><br /><br />
-											<small> 2. Sending an issue to material-kit </small><br /><br />
-										</h3></div>
+											<h3 style="text-align: justify;">
+												<div class="title">
+													<small> 1. Comparison of progress bars<br />&nbsp&nbsp1) Matrial-kit</small>
+												</div>
+
+
+
+												<div class="container-fluid">
+
+			                    <div class="progress progress-line-primary">
+			                    	<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+			                        <span class="sr-only">60% Complete</span>
+			                      </div>
+			                    </div>
+
+			                    <div class="progress progress-line-info">
+			                    	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+			                    		<span class="sr-only">60% Complete</span>
+			                    	</div>
+			                    </div>
+
+			                    <div class="progress progress-line-danger">
+			                    	<div class="progress-bar progress-bar-success" style="width: 35%">
+			                            <span class="sr-only">35% Complete (success)</span>
+			                        </div>
+			                        <div class="progress-bar progress-bar-warning" style="width: 20%">
+			                            <span class="sr-only">20% Complete (warning)</span>
+			                        </div>
+			                        <div class="progress-bar progress-bar-danger" style="width: 10%">
+			                            <span class="sr-only">10% Complete (danger)</span>
+			                        </div>
+			                    </div>
+												</div>
+												<small>&nbsp&nbsp2) Bootswatch</small>
+												<div class="container-fluid">
+
+
+            <small>Basic</small>
+											<div class="bs-component">
+												<div class="progres">
+													<div class="progres-bar" style="width: 60%;"></div>
+												</div>
+											</div>
+
+											<small>Contextual alternatives</small>
+											<div class="bs-component">
+												<div class="progres">
+													<div class="progres-bar progres-bar-info" style="width: 20%"></div>
+												</div>
+
+												<div class="progres">
+													<div class="progres-bar progres-bar-success" style="width: 40%"></div>
+												</div>
+
+												<div class="progres">
+													<div class="progres-bar progres-bar-warning" style="width: 60%"></div>
+												</div>
+
+												<div class="progres">
+													<div class="progres-bar progres-bar-danger" style="width: 80%"></div>
+												</div>
+											</div>
+
+											<small>Striped</small>
+											<div class="bs-component">
+												<div class="progres progres-striped">
+													<div class="progres-bar progres-bar-info" style="width: 20%"></div>
+												</div>
+
+												<div class="progres progres-striped">
+													<div class="progres-bar progres-bar-success" style="width: 40%"></div>
+												</div>
+
+												<div class="progres progres-striped">
+													<div class="progres-bar progres-bar-warning" style="width: 60%"></div>
+												</div>
+
+												<div class="progres progres-striped">
+													<div class="progres-bar progres-bar-danger" style="width: 80%"></div>
+												</div>
+											</div>
+
+											<small>Animated</small>
+											<div class="bs-component">
+												<div class="progres progres-striped active">
+													<div class="progres-bar" style="width: 45%"></div>
+												</div>
+											</div>
+
+											<small>Stacked</small>
+											<div class="bs-component">
+												<div class="progres">
+													<div class="progres-bar progrss-bar-success" style="width: 35%"></div>
+													<div class="progres-bar progrss-bar-warning" style="width: 20%"></div>
+													<div class="progres-bar progrss-bar-danger" style="width: 10%"></div>
+												</div>
+											</div>
+										</div>
+										<div class="title">
+											<small> 2. Paginations<br />&nbsp&nbsp1) Matrial-kit</small>
+										</div>
+										<div class = "container-fluid">
+
+
+										<ul class="pagination pagination-primary">
+										<!--
+						color-classes: "pagination-primary", "pagination-info", "pagination-success", "pagination-warning", "pagination-danger"
+										-->
+						<li><a href="javascript:void(0);">1</a></li>
+						<li><a href="javascript:void(0);">...</a></li>
+						<li><a href="javascript:void(0);">5</a></li>
+						<li><a href="javascript:void(0);">6</a></li>
+						<li class="active"><a href="javascript:void(0);">7</a></li>
+						<li><a href="javascript:void(0);">8</a></li>
+						<li><a href="javascript:void(0);">9</a></li>
+						<li><a href="javascript:void(0);">...</a></li>
+						<li><a href="javascript:void(0);">12</a></li>
+										</ul>
+										<br />
+
+					<ul class="pagination pagination-info">
+						<li><a href="javascript:void(0);">&lt prev</a></li>
+						<li><a href="javascript:void(0);">1</a></li>
+						<li><a href="javascript:void(0);">2</a></li>
+						<li class="active"><a href="javascript:void(0);">3</a></li>
+						<li><a href="javascript:void(0);">4</a></li>
+						<li><a href="javascript:void(0);">5</a></li>
+						<li><a href="javascript:void(0);">next &gt</a></li>
+										</ul>
+										</div>
+										<small>&nbsp&nbsp2) Bootswatch</small>
+
+
+
+
+										<div class="bs-component">
+										  <ul class="paginations">
+										    <li class="disabled"><a href="#">&laquo;</a></li>
+										    <li class="active"><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li><a href="#">&raquo;</a></li>
+										  </ul>
+											<br />
+
+										  <ul class="paginations paginations-lg">
+										    <li class="disabled"><a href="#">&laquo;</a></li>
+										    <li class="active"><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">&raquo;</a></li>
+										  </ul>
+											<br />
+
+										  <ul class="paginations paginations-sm">
+										    <li class="disabled"><a href="#">&laquo;</a></li>
+										    <li class="active"><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li><a href="#">&raquo;</a></li>
+										  </ul>
+											<br />
+										</div>
+
+
+
+
+										</h3>
+											<div class="container-fluid">
+												<ul class="pagination pagination-info">
+													<li><a href="#profile" data-toggle="tab">&lt prev</a></li>
+													<li><a href="#profile" data-toggle="tab">1</a></li>
+													<li class="active"><a href="#messages" data-toggle="tab">2</a></li>
+													<li><a href="javascript:void(0);">3</a></li>
+													<li><a href="javascript:void(0);">4</a></li>
+													<li><a href="javascript:void(0);">5</a></li>
+													<li><a href="javascript:void(0);">6</a></li>
+													<li><a href="javascript:void(0);">7</a></li>
+													<li><a href="javascript:void(0);">8</a></li>
+													<li><a href="javascript:void(0);">next &gt</a></li>
+												</ul>
+											</div>
+
+										</div>
 										<div class="tab-pane" id="settings">
 											<p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities.
 												I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
